@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Precifica Vet</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <h1 class="title-header">Precifica Vet</h1>
+        <p>Precifique seus produtos e serviços veterinários rapidamente</p>
+        <img src="../../assets/precifica-vet-logo.png" height="20rem" alt="logo do precifica vet">
+        <a href="../information/information.html">Informações</a>
+      </header>
+
+      <div class="servico">
+        <h2 class="title-body">Precifique o serviço (consulta, cirurgia, procedimentos)</h2>
+
+        <label for="custosVariaveis">Custos Variáveis</label>
+        <input type="number" name="custosVariaveis" id="custosVariaveis" />
+
+        <label for="custosFixos">Custos Fixos</label>
+        <input type="number" name="custosFixos" id="custosFixos" />
+
+        <label for="numeroEstimado">Número de Serviços Estimados</label>
+        <input type="number" name="numeroEstimado" id="numeroEstimado" />
+
+        <label for="margemLucro">Margem de Lucro</label>
+        <input type="number" name="margemLucro" id="margemLucro" />
+
+        <div class="precoServico">
+            <label for="precoServico">Preço do Serviço</label>
+            <input type="number" name="precoServico" id="precoServico" />
+        </div>
+      </div>
+      <div class="produto">
+        <h2 class="title-body">Precifique um produto</h2>
+
+        <label for="custoCompra">Custo de Compra</label>
+        <input type="number" name="custoCompra" id="custoCompra" />
+
+        <label for="custosIndiretos">Custos Indiretos Proporcionais</label>
+        <input type="number" name="custosIndiretos" id="custosIndiretos" />
+
+        <label for="markup">MarkUp</label>
+        <input type="number" name="markup" id="markup" />
+
+        <div class="precoProduto">
+            <label for="precoProduto">Preço do Produto</label>
+            <input type="number" name="precoProduto" id="precoProduto" />
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
