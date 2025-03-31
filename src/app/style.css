@@ -28,7 +28,14 @@ a {
 }
 
 .title-header {
-    padding: 1.5rem;
+    padding: 1rem;
+}
+
+.section {
+    display: flex;
+    gap: 2rem;
+    padding-top: 5rem;
+    justify-content: space-evenly;
 }
 
 .servico, .produto {
@@ -51,5 +58,14 @@ a {
     gap: .25rem;
 }
 .precoServico, .precoProduto label{
+    font-weight: bold;
+}
+
+button {
+    margin: .5rem 0;
+    width: 10.75rem;
+    border-radius: .5rem;
+    height: 2rem;
+    background-color: gold;
     font-weight: bold;
 }

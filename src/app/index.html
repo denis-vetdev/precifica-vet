@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Precifica Vet</title>
   </head>
@@ -17,48 +18,57 @@
       <header class="header">
         <h1 class="title-header">Precifica Vet</h1>
         <p>Precifique seus produtos e serviços veterinários rapidamente</p>
-        <img src="../../assets/precifica-vet-logo.png" height="20rem" alt="logo do precifica vet">
         <a href="../information/information.html">Informações</a>
       </header>
 
-      <div class="servico">
-        <h2 class="title-body">Precifique o serviço (consulta, cirurgia, procedimentos)</h2>
+      <section class="section">
+        <div class="servico">
+          <h2 class="title-body">Precifique o serviço</h2>
 
-        <label for="custosVariaveis">Custos Variáveis</label>
-        <input type="number" name="custosVariaveis" id="custosVariaveis" />
+          <label for="custoServico">Custo Total do Serviço</label>
+          <input type="text"  inputmode= "numeric" name="custoServico" id="custoServico" class="moneyInput" placeholder="R$ 0,00"/>
 
-        <label for="custosFixos">Custos Fixos</label>
-        <input type="number" name="custosFixos" id="custosFixos" />
+          <label for="custosVariaveis">Custos Variáveis</label>
+          <input type="text" inputmode= "numeric" name="custosVariaveis" id="custosVariaveis" placeholder="%" />
 
-        <label for="numeroEstimado">Número de Serviços Estimados</label>
-        <input type="number" name="numeroEstimado" id="numeroEstimado" />
+          <label for="custosFixos">Custos Fixos</label>
+          <input type="text" inputmode= "numeric" name="custosFixos" id="custosFixos" placeholder="%"/>
 
-        <label for="margemLucro">Margem de Lucro</label>
-        <input type="number" name="margemLucro" id="margemLucro" />
+          <label for="margemLucro">Margem de Lucro</label>
+          <input type="text" inputmode= "numeric" name="margemLucro" id="margemLucro" placeholder="%"/>
 
-        <div class="precoServico">
-            <label for="precoServico">Preço do Serviço</label>
-            <input type="number" name="precoServico" id="precoServico" />
+          <button type="button" onclick="precificarServico()">Calcular</button>
+
+          <div class="precoServico">
+              <label for="precoServico">Preço do Serviço</label>
+              <input type="text" inputmode= "numeric"  name="precoServico" id="precoServico" disabled placeholder="R$ 0,00" class="moneyInput" readonly/>
+          </div>
         </div>
-      </div>
-      <div class="produto">
-        <h2 class="title-body">Precifique um produto</h2>
+        <div class="produto">
+          <h2 class="title-body">Precifique um produto</h2>
 
-        <label for="custoCompra">Custo de Compra</label>
-        <input type="number" name="custoCompra" id="custoCompra" />
+          <label for="custoCompra">Custo de Compra</label>
+          <input type="text" inputmode= "numeric"  name="custoCompra" id="custoCompra" class="moneyInput" placeholder="R$ 0,00"/>
 
-        <label for="custosIndiretos">Custos Indiretos Proporcionais</label>
-        <input type="number" name="custosIndiretos" id="custosIndiretos" />
+          <label for="custosVariaveisProdutos">Custos Variáveis</label>
+          <input type="text" inputmode= "numeric"  name="custosVariaveisProdutos" id="custosVariaveisProdutos" placeholder="%" />
 
-        <label for="markup">MarkUp</label>
-        <input type="number" name="markup" id="markup" />
+          <label for="custosFixosProdutos">Custos Fixos</label>
+          <input type="text" inputmode= "numeric"  name="custosFixosProdutos" id="custosFixosProdutos" placeholder="%" />
 
-        <div class="precoProduto">
-            <label for="precoProduto">Preço do Produto</label>
-            <input type="number" name="precoProduto" id="precoProduto" />
+          <label for="margemLucroProdutos">Margem de Lucro</label>
+          <input type="text" inputmode= "numeric"  name="margemLucroProdutos" id="margemLucroProdutos" placeholder="%"/>
+
+          <button type="button" onclick="precificarProduto()">Calcular</button>
+
+          <div class="precoProduto">
+              <label for="precoProduto">Preço do Produto</label>
+              <input type="text" inputmode= "numeric"  name="precoProduto" id="precoProduto" disabled  class="moneyInput" placeholder="R$ 0,00"/>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
