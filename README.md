@@ -42,9 +42,11 @@ Este site é uma ferramenta de precificação desenvolvida para ajudar empresas,
    - Margem de lucro
    - Custo do serviço ou produto
 2. O JavaScript calcula o preço ideal utilizando a fórmula:
+   
    $$
    \text{Preço Ideal} = \text{Custo Total} \times \left(\frac{100}{100 - (\text{Custos Variáveis} + \text{Custos Fixos} + \text{Margem de Lucro})}\right)
    $$
+   
 3. O resultado é exibido em formato monetário brasileiro (ex.: R$ 100,00).
 
 ---
