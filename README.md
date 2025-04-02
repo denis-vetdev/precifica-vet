@@ -54,7 +54,7 @@ Este site é uma ferramenta de precificação desenvolvida para ajudar empresas,
 ## **Estrutura do Projeto**
 
 ### Arquivos Principais
-- `index.html`: Contém a estrutura principal do site, incluindo seções como FAQ e formulários para precificação[2][6].
+- `index.html`: Contém a estrutura principal do site, incluindo seções como FAQ e formulários para precificação.
 - `style.css`: Define o estilo visual do site, como cores, fontes e layout.
 - `script.js`: Gerencia a lógica dos cálculos e a interatividade com o usuário.
 
