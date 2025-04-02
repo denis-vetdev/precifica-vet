@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5985509030519147"
      crossorigin="anonymous"></script>
     <title>Precifica Vet</title>
@@ -18,8 +18,8 @@
     <main>
       <header class="header">
         <h1 class="title-header">Precifica Vet</h1>
-        <p>Precifique seus produtos e serviços veterinários rapidamente</p>
-        <a href="information.html">Informações</a>
+        <p>Precifique seus produtos e serviços veterinários rapidamente!</p>
+          <a href="information.html">Informações</a>  
       </header>
 
       <section class="section">
@@ -29,13 +29,13 @@
           <label for="custoServico">Custo Total do Serviço</label>
           <input type="text"  inputmode= "numeric" name="custoServico" id="custoServico" class="moneyInput" placeholder="R$ 0,00"/>
 
-          <label for="custosVariaveis">Custos Variáveis</label>
+          <label for="custosVariaveis">Custos Variáveis (%)</label>
           <input type="text" inputmode= "numeric" name="custosVariaveis" id="custosVariaveis" placeholder="%" />
 
-          <label for="custosFixos">Custos Fixos</label>
+          <label for="custosFixos">Custos Fixos (%)</label>
           <input type="text" inputmode= "numeric" name="custosFixos" id="custosFixos" placeholder="%"/>
 
-          <label for="margemLucro">Margem de Lucro</label>
+          <label for="margemLucro">Margem de Lucro Desejada (%)</label>
           <input type="text" inputmode= "numeric" name="margemLucro" id="margemLucro" placeholder="%"/>
 
           <button type="button" onclick="precificarServico()">Calcular</button>
@@ -51,13 +51,13 @@
           <label for="custoCompra">Custo de Compra</label>
           <input type="text" inputmode= "numeric"  name="custoCompra" id="custoCompra" class="moneyInput" placeholder="R$ 0,00"/>
 
-          <label for="custosVariaveisProdutos">Custos Variáveis</label>
+          <label for="custosVariaveisProdutos">Custos Variáveis (%)</label>
           <input type="text" inputmode= "numeric"  name="custosVariaveisProdutos" id="custosVariaveisProdutos" placeholder="%" />
 
-          <label for="custosFixosProdutos">Custos Fixos</label>
+          <label for="custosFixosProdutos">Custos Fixos (%)</label>
           <input type="text" inputmode= "numeric"  name="custosFixosProdutos" id="custosFixosProdutos" placeholder="%" />
 
-          <label for="margemLucroProdutos">Margem de Lucro</label>
+          <label for="margemLucroProdutos">Margem de Lucro Desejada (%)</label>
           <input type="text" inputmode= "numeric"  name="margemLucroProdutos" id="margemLucroProdutos" placeholder="%"/>
 
           <button type="button" onclick="precificarProduto()">Calcular</button>
@@ -96,8 +96,11 @@
           <p>Sim! O sistema pode ser utilizado para precificar qualquer serviço ou produto, desde que você insira os valores corretos.</p>
         </details>
       </section>      
+      <footer>
+        <p>&copy; 2025 Precifica Vet - Todos os direitos reservados.</p>
+      </footer>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;  
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    background: rgb(69,249,51);
+    background: linear-gradient(0deg, rgba(69,249,51,1) 0%, rgba(23,157,12,1) 100%);
+}
+
+a {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.25rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: .25rem;
+    background-color: #03C03C;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.title-header {
+    padding: .5rem;
+}
+
+.header p {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+.header button {
+
+}
+
+.section {
+    display: flex;
+    gap: 2rem;
+    padding-top: 5rem;
+    justify-content: space-evenly;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    padding-top: 1rem;
+    gap: .5rem;
+}
+
+details {
+    background: white;
+    border: 0.0625rem solid #ddd;
+    border-radius: .3125rem;
+    margin-bottom: .625rem;
+    padding: .625rem;
+    cursor: pointer;
+    max-width: 40%;
+    width: 30%;
+  }
+  
+  details summary {
+    font-weight: bold;
+    font-size: 1.125rem;
+    cursor: pointer;
+    padding: .625rem;
+  }
+  
+  details[open] {
+    background: #fff;
+    border-left: .25rem solid #007BFF;
+  }
+  
+  details p {
+    padding: .625rem;
+    margin-top: .625rem;
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+  }
+
+.servico, .produto {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: start;
+    gap: .25rem;
+    padding-left: 1.5rem;
+    padding-bottom: .5rem;
+    font-weight: bold;
+}
+
+.title-body {
+    padding-bottom: .5rem;
+}
+
+.precoServico, .precoProduto {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+.precoServico, .precoProduto label{
+    font-weight: bold;
+}
+
+.section button {
+    margin: .5rem 0;
+    width: 10.75rem;
+    border-radius: .5rem;
+    height: 2rem;
+    background-color: gold;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input {
+    height: 1.75rem;
+    padding: .0625rem;
+    border-width: .125rem;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem;
+    margin-left: 1rem;
+
+}
+
+.information p {
+    width: 40%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 6rem;
+}
