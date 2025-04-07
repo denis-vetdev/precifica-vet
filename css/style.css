@@ -9,8 +9,9 @@
 body {
     font-family: "Roboto", sans-serif;
     min-height: 100vh;
-    background: rgb(69,249,51);
-    background: linear-gradient(0deg, rgba(69,249,51,1) 0%, rgba(23,157,12,1) 100%);
+    background-color: #fff;
+    /* background: rgb(69,249,51);
+    background: linear-gradient(0deg, rgba(69,249,51,1) 0%, rgba(23,157,12,1) 100%); */
 }
 
 a {
@@ -24,9 +25,10 @@ a {
     flex-direction: column;
     text-align: center;
     gap: .25rem;
-    background-color: #03C03C;
+    background-color: #038f2d;
     padding-bottom: 1rem;
     padding-top: 1rem;
+    color: #fff;
 }
 
 .title-header {
@@ -41,7 +43,7 @@ a {
 .section {
     display: flex;
     gap: 2rem;
-    padding-top: 5rem;
+    padding-top: 2.5rem;
     justify-content: space-evenly;
 }
 
@@ -74,7 +76,7 @@ details {
   
   details[open] {
     background: #fff;
-    border-left: .25rem solid #007BFF;
+    border-left: .25rem solid #038f2d;
   }
   
   details p {
@@ -88,16 +90,22 @@ details {
 .servico, .produto {
     display: flex;
     flex-direction: column;
-    text-align: start;
-    align-items: start;
+    text-align: center;
+    align-items: center;
     gap: .25rem;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     padding-bottom: .5rem;
     font-weight: bold;
+    background-color: #038f2d;
+    border-radius: .5rem;
+    min-width: 16.5625rem;
+    color: #fff;
 }
 
 .title-body {
     padding-bottom: .5rem;
+    padding-right: .75rem;
+    padding-top: .75rem;
 }
 
 .precoServico, .precoProduto {
@@ -114,15 +122,26 @@ details {
     width: 10.75rem;
     border-radius: .5rem;
     height: 2rem;
-    background-color: gold;
+    /* background-color: gold; */
+    background-color: #ff5b14;
+    color: #fff;
     font-weight: bold;
     font-size: 1rem;
+}
+
+.section button:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    filter: brightness(110%);
+    transform: scale(1.05); 
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 input {
     height: 1.75rem;
     padding: .0625rem;
     border-width: .125rem;
+    background-color: #fff;
 }
 
 .information {
