@@ -1,0 +1,682 @@
+/* style2.css */
+
+/* Reset e Estilos Base */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --success-color: #27ae60;
+    --text-color: #333;
+    --text-light: #7f8c8d;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f5f7fa;
+    padding: 0;
+    margin: 0;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+ /* Header Aprimorado */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1a2a3a 100%);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    transform: rotate(30deg);
+  }
+  
+  .title-header {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .title-header::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    border-radius: 3px;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: rgba(255,255,255,0.9);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+  
+  .header a {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition);
+    position: relative;
+    z-index: 1;
+    border: 2px solid rgba(255,255,255,0.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+  }
+  
+  .header a:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  }
+  
+  .header a:active {
+    transform: translateY(1px);
+  }
+  
+  /* Footer Aprimorado */
+  footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-top: 40px;
+    color: white;
+    position: relative;
+  }
+  
+  footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+  }
+  
+  footer p {
+    margin: 0;
+    padding: 10px 0;
+    position: relative;
+  }
+  
+  /* Adicione estas variáveis no :root se ainda não existirem */
+  :root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --text-light: #bdc3c7;
+  }
+  
+  /* Efeitos adicionais para responsividade */
+  @media (max-width: 768px) {
+    .title-header {
+      font-size: 2.2rem;
+    }
+    
+    .header p {
+      font-size: 1rem;
+    }
+    
+    .header, footer {
+      padding: 30px 15px;
+    }
+  }
+  
+  /* Opcional: Adicione elementos decorativos */
+  .footer-decoration {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .footer-decoration span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    opacity: 0.6;
+  }
+  
+  /* Seção Principal */
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .section {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .servico, .produto {
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .title-body {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--light-color);
+  }
+  
+  /* Formulários */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--dark-color);
+  }
+  
+  /* Adicione estas regras ao seu arquivo CSS existente */
+
+/* Estilização aprimorada para inputs */
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: var(--transition);
+    background-color: #fff;
+    color: var(--text-color);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Placeholder estilizado */
+  input::placeholder {
+    color: #bdc3c7;
+    font-weight: 300;
+  }
+  
+  /* Input desabilitado */
+  input:disabled {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+    opacity: 0.9;
+  }
+  
+  /* Input de moeda destacado */
+  .moneyInput {
+    font-weight: 600;
+    color: var(--primary-color);
+    background-color: #f8f9fa !important;
+    border: 1px solid #e0e0e0 !important;
+  }
+  
+  /* Input de porcentagem */
+  input[placeholder="%"] {
+    text-align: start;
+    font-weight: 500;
+  }
+  
+  /* Foco no input */
+  input[type="text"]:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2),
+                inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Estado inválido */
+  input:invalid {
+    border-color: var(--accent-color);
+  }
+  
+  /* Container dos inputs para agrupamento lógico */
+  .input-group {
+    margin-bottom: 25px;
+  }
+  
+  .input-group label {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Ícones opcionais para inputs (se quiser adicionar) */
+  .input-icon {
+    position: relative;
+  }
+  
+  .input-icon input {
+    padding-left: 40px;
+  }
+  
+  .input-icon::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  /* Exemplo de ícone para campo de moeda */
+  .money-input::before {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%237f8c8d"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>');
+  }
+  
+  /* Media queries para responsividade */
+  @media (max-width: 480px) {
+    input[type="text"] {
+      padding: 10px 12px;
+      font-size: 0.9rem;
+    }
+  }
+
+  /* FAQ Aprimorado */
+.faq {
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 40px;
+  }
+  
+  .faq h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--light-color);
+    text-align: center;
+  }
+  
+  .faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  details {
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: var(--transition);
+    background-color: #f9f9f9;
+  }
+  
+  details:hover {
+    border-color: var(--secondary-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  summary {
+    padding: 18px 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  summary::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: var(--transition);
+    color: var(--secondary-color);
+  }
+  
+  details[open] summary::after {
+    content: '-';
+    color: var(--accent-color);
+  }
+  
+  details[open] summary {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+  }
+  
+  details[open] {
+    background-color: white;
+    border-color: var(--secondary-color);
+  }
+  
+  details p {
+    padding: 20px;
+    line-height: 1.7;
+    color: var(--text-color);
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  /* Botões Calcular Aprimorados */
+  button[type="button"] {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.5px;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  button[type="button"]:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  button[type="button"]::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+  }
+  
+  button[type="button"]:focus:not(:active)::after {
+    animation: ripple 0.6s ease-out;
+  }
+  
+  @keyframes ripple {
+    0% {
+      transform: scale(0, 0);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(20, 20);
+      opacity: 0;
+    }
+  }
+  
+  /* Ícone opcional para botões */
+  .button-with-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .button-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Efeito de loading (opcional) */
+  .button-loading::after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: translateY(-50%) rotate(360deg); }
+  }
+
+  /* Adicione estas regras ao seu style2.css existente */
+
+/* Estilos específicos para information.html - sem alterar HTML */
+
+/* Header da página de informações */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1a2a3a 100%);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    color: white;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    border-radius: 3px;
+  }
+  
+  /* Seções de informação */
+  .information {
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 30px;
+    transition: var(--transition);
+  }
+  
+  .information:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .information h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--light-color);
+  }
+  
+  .information p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+    color: var(--text-color);
+  }
+  
+  .information ul {
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+  
+  .information li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .information li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+  }
+  
+  .information strong {
+    color: var(--primary-color);
+  }
+  
+  /* Layout da página - usando main que já existe */
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .header {
+      padding: 40px 15px;
+    }
+    
+    .header h1 {
+      font-size: 2rem;
+    }
+    
+    .information {
+      padding: 25px 20px;
+    }
+    
+    .information h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Efeitos de animação */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .information {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  .information:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .information:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  
+  .information:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  
+  /* Footer - usando o seletor que já existe */
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: white;
+    font-size: 0.95rem;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-top: 40px;
+    position: relative;
+  }
+  
+  footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+  }
+  
+  footer p {
+    margin: 0;
+  }
